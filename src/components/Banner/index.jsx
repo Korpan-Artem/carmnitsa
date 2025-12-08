@@ -1,9 +1,11 @@
-import { StyledText } from './styles';
+import { StyledBox, StyledText } from "./styles";
 
 function Banner() {
   return (
-    <StyledText>RESIVE & ARTtoDOC</StyledText>
-  )
+    <StyledBox>
+      <StyledText>RESIVE & ARTtoDOC</StyledText>
+    </StyledBox>
+  );
 }
 
-export default Banner
+export default Banner;
