@@ -25,12 +25,11 @@ export default defineConfig([
     rules: {
       'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
 
-      // --- правила для відступів та вирівнювання ключів ---
       'indent'     : ['error', 2, { ObjectExpression: 1, ArrayExpression: 1 }],
       'key-spacing': ['error', {
         beforeColon: false,
         afterColon : true,
-        align      : 'colon' // вирівнювання двокрапок по колонці
+        align      : 'colon'
       }],
       'object-curly-newline': ['error', { multiline: true, consistent: true }],
     },
