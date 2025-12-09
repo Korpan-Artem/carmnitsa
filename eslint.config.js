@@ -12,7 +12,11 @@ export default defineConfig([
       js.configs.recommended,
       reactHooks.configs['recommended-latest'],
       reactRefresh.configs.vite,
+      'plugin:import/errors',
+      'plugin:import/warnings',
+      'plugin:import/typescript'
     ],
+    plugins        : ['import'],
     languageOptions: {
       ecmaVersion  : 2020,
       globals      : globals.browser,
