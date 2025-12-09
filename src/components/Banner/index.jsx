@@ -1,9 +1,11 @@
-import { StyledBox, StyledText } from "./styles";
+import { StyledBox, StyledText, Bold } from "./styles";
 
 function Banner() {
   return (
     <StyledBox>
-      <StyledText>RESIVE & ARTtoDOC</StyledText>
+      <StyledText>
+        Ласкаво просимо до <Bold>автомагазину</Bold>
+      </StyledText>
     </StyledBox>
   );
 }
