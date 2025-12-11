@@ -1,26 +1,25 @@
-import "./App.css";
-import Banner from "./components/Banner";
-import Header from "./components/Header";
-import ModelsCard from "./components/ModelsCard";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Layout from "./Layout";
+import Home from "./pages/Home";
+import About from "./pages/About";
 
-const result = [
-  "Модельний ряд",
-  "Авто у наявності",
-  "Покупцям",
-  "Фінансові послуги",
-  "Сервіс",
-  "Про компанію",
-  "Новини",
-];
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "about",
+        element: <About />,
+      },
+    ],
+  },
+]);
 
-function App() {
-  return (
-    <>
-      <Header items={result} />
-      <Banner />
-      <ModelsCard />
-    </>
-  );
+export default function App() {
+  return <RouterProvider router={router} />;
 }
-
-export default App;
