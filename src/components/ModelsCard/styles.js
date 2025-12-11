@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledText = styled.span`
-  font-size: 50px;
+  font-size: 16px;
 
   font-family: Helvetica, sans-serif;
   padding: 10px;
@@ -20,11 +20,11 @@ export const StyledBox = styled.div`
 `;
 
 export const StyledCard = styled.div`
-  height: 700px;
   width: 500px;
   text-align: center;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 `;

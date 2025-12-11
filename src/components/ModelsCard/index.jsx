@@ -1,10 +1,8 @@
-import Item from "antd/es/list/Item";
 import { StyledBox, StyledCard, StyledText } from "./styles";
 
-function ModelsCard(products = []) {
-  console.log(products);
+function ModelsCard({ products = [] }) {
   return (
-    <StyledBox className="CardContainer">
+    <StyledBox>
       {products.length !== 0
         ? products.map((item, index) => (
             <StyledCard key={index} className="model-item">
