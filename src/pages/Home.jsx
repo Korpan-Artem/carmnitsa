@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { getProducts } from "../api/products";
+import Banner from '../components/Banner';
 
 export default function Home() {
   const [products, setProducts] = useState([]);
@@ -10,7 +11,7 @@ export default function Home() {
     const fetchProducts = async () => {
       try {
         const res = await getProducts();
-        console.log('res', res);
+
         setProducts(res.data);
       } catch (err) {
         console.error(err);
@@ -32,6 +33,7 @@ export default function Home() {
       {products.map((p) => (
         <div key={p.id}>{p.title}</div>
       ))}
+      <Banner/>
     </div>
   );
 }
