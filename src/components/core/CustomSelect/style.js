@@ -1,99 +1,6 @@
 import styled from "styled-components";
 import { Select } from "antd";
 
-export const BannerWrapper = styled.section`
-  min-height: 40vh;
-  background: #ffffff;
-  padding: 40px 120px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-
-  @media (max-width: 1200px) {
-    padding: 36px 60px;
-  }
-
-  @media (max-width: 992px) {
-    flex-direction: column;
-    text-align: center;
-    padding: 28px 20px;
-  }
-`;
-
-export const BannerContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-  max-width: 600px;
-
-  @media (max-width: 992px) {
-    align-items: center;
-  }
-`;
-
-export const BannerTextSmall = styled.p`
-  font-size: 20px;
-  color: #2b2b2b;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  margin: 0;
-`;
-
-export const BannerTextLarge = styled.h1`
-  font-size: 54px;
-  line-height: 1.15;
-  color: #000000;
-  font-weight: 800;
-  margin: 0;
-
-  strong {
-    color: #0057b7;
-  }
-
-  @media (max-width: 768px) {
-    font-size: 38px;
-  }
-`;
-
-export const BannerImage = styled.img`
-  width: 520px;
-  object-fit: contain;
-  pointer-events: none;
-  user-select: none;
-
-  @media (max-width: 1200px) {
-    width: 460px;
-  }
-
-  @media (max-width: 992px) {
-    width: 70%;
-    margin-top: 24px;
-  }
-`;
-
-export const FiltersWrapper = styled.div`
-  width: 100%;
-  margin-top: 16px;
-  display: flex;
-  justify-content: center;
-`;
-
-export const FiltersInner = styled.div`
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  max-width: 1400px;
-  padding: 0 16px;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 6px;
-    align-items: stretch;
-  }
-`;
-
 export const StyledSelectWrapper = styled(Select)`
   width: 420px;
   min-width: 220px;
@@ -112,14 +19,17 @@ export const StyledSelectWrapper = styled(Select)`
   .ant-select-selector {
     height: 64px !important;
     padding: 0 18px !important;
+
     background: #ffffff;
     border: 2px solid #0057b7;
     border-radius: 14px !important;
+
     display: flex;
     align-items: center;
     font-size: 16px;
     font-weight: 600;
     color: #000000;
+
     box-shadow: 0 8px 24px rgba(0, 87, 183, 0.10);
     transition: all 0.22s cubic-bezier(.2,.9,.2,1);
   }

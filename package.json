@@ -13,10 +13,12 @@
     "@reduxjs/toolkit": "^2.11.1",
     "antd": "^5.27.3",
     "axios": "^1.13.2",
+    "i18next": "^25.7.2",
     "my-private-module": "https://github.com/Korpan-Artem/carmnitsa",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet-async": "^2.0.5",
+    "react-i18next": "^16.5.0",
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.10.1",
     "styled-components": "^6.1.19"
