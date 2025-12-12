@@ -24,13 +24,13 @@ export default function Home() {
     fetchProducts();
   }, []);
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>{error}</div>;
+  // if (loading) return <div>Loading...</div>;
+  // if (error) return <div>{error}</div>;
 
   return (
     <div>
       <Banner />
-      <ModelsCard products={Models} />
+      {/* <ModelsCard products={Models} /> */}
     </div>
   );
 }
