@@ -57,10 +57,9 @@ export const BannerTextLarge = styled.h1`
   }
 `;
 
-export const BannerImage = styled.img`
+export const BannerImageWrapper = styled.div`
+  position: relative;
   width: 520px;
-  object-fit: contain;
-  pointer-events: none;
   user-select: none;
 
   @media (max-width: 1200px) {
@@ -70,6 +69,51 @@ export const BannerImage = styled.img`
   @media (max-width: 992px) {
     width: 70%;
     margin-top: 24px;
+  }
+
+  img {
+    width: 100%;
+    object-fit: contain;
+    pointer-events: none;
+    display: block;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 56%;
+    right: 7%;
+    opacity: 0;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,165,0,1) 0%, rgba(255,165,0,0.0) 60%);
+    box-shadow: 0 0 20px 12px rgba(255,165,0,0.6);
+    animation: blinkTurnSignal 1s infinite;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 42%;
+    left: 9%;
+    opacity: 0;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,54,54,1) 0%, rgba(255,54,54,0.0) 60%);
+    box-shadow: 0 0 20px 12px rgba(255,54,54,0.6);
+    animation: blinkTurnSignal 1s infinite;
+  }
+
+  &::after,
+  &::before {
+    animation: blinkTurnSignal 1.5s infinite linear;
+  }
+
+  @keyframes blinkTurnSignal {
+    0%, 50%, 100% { opacity: 0; }
+    25%, 75% { opacity: 1; }
   }
 `;
 

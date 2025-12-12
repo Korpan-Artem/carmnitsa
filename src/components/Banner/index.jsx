@@ -7,7 +7,7 @@ import {
   BannerContent,
   BannerTextSmall,
   BannerTextLarge,
-  BannerImage,
+  BannerImageWrapper,
   FiltersWrapper,
   FiltersInner
 } from "./styles";
@@ -21,14 +21,15 @@ function Banner() {
       <BannerWrapper>
         <BannerContent>
           <BannerTextSmall>{t("banner.smallText")}</BannerTextSmall>
-
           <BannerTextLarge dangerouslySetInnerHTML={{ __html: t("banner.largeText") }} />
         </BannerContent>
 
-        <BannerImage 
-          src={mainBanner} 
-          alt="Автомобільні деталі для вашого авто – легкі, швидкі та надійні" 
-        />
+        <BannerImageWrapper>
+          <img 
+            src={mainBanner} 
+            alt="Автомобільні деталі для вашого авто – легкі, швидкі та надійні" 
+          />
+        </BannerImageWrapper>
       </BannerWrapper>
 
       <FiltersWrapper>
