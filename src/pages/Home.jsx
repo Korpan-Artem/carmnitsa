@@ -24,16 +24,13 @@ export default function Home() {
     fetchProducts();
   }, []);
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>{error}</div>;
+  // if (loading) return <div>Loading...</div>;
+  // if (error) return <div>{error}</div>;
 
   return (
     <div>
-      <h1>Products</h1>
-      {products.map((p) => (
-        <div key={p.id}>{p.title}</div>
-      ))}
-      <Banner/>
+      <Banner />
+      {/* <ModelsCard products={Models} /> */}
     </div>
   );
 }
