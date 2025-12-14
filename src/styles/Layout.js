@@ -12,10 +12,12 @@ export const Wrapper = styled.div`
   line-height: 1.6;
 
   transition: background 0.3s ease, color 0.3s ease;
+  align-content: space-between;
 `;
 
 export const Container = styled.div`
   width: 100%;
   max-width: 1480px;
   margin: 0 auto;
+  margin-top: auto;
 `;
