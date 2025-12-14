@@ -1,11 +1,34 @@
 import { useEffect, useState } from "react";
 import { getProducts } from "../api/products";
-import Banner from '../components/Banner';
+import Banner from "../components/Banner";
+import ModelsCard from "../components/ModelsCard";
+
+const Models = [
+  {
+    brand: "BMW",
+    model: "M5",
+    year: 2017,
+    photoUrl: "https://mixprogram.ru/upload/000/u1/6/c/bmw-photo-normal.jpg",
+  },
+  {
+    brand: "Wolksvagen",
+    model: "B3",
+    year: 2020,
+    photoUrl: "https://s1.manualzz.com/image-store/data/4764091-256x256",
+  },
+  {
+    brand: "Tesla",
+    model: "Y",
+    year: 2025,
+    photoUrl:
+      "https://files.idyllic.app/files/static/2106675?width=256&optimizer=image",
+  },
+];
 
 export default function Home() {
   const [products, setProducts] = useState([]);
-  const [loading, setLoading]   = useState(true);
-  const [error, setError]       = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -30,7 +53,7 @@ export default function Home() {
   return (
     <div>
       <Banner />
-      {/* <ModelsCard products={Models} /> */}
+      <ModelsCard products={Models} />
     </div>
   );
 }
