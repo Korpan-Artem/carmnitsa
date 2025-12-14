@@ -1,6 +1,7 @@
-import { Outlet }   from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { Wrapper, Container } from "./styles/Layout";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import "./index.css";
 
 const result = [
@@ -16,14 +17,14 @@ const result = [
 export default function Layout() {
   return (
     <Wrapper>
-      <Header items={result}/>
-      
+      <Header items={result} />
+
       <Container as="main">
-        <Outlet /> 
+        <Outlet />
       </Container>
 
       <Container as="footer">
-        Footer
+        <Footer />
       </Container>
     </Wrapper>
   );
