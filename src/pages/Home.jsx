@@ -52,10 +52,6 @@ export default function Home() {
 
   return (
     <div>
-      <h1>Products</h1>
-      {products.map((p) => (
-        <div key={p.id}>{p.title}</div>
-      ))}
       <Banner />
       <ModelsCard products={Models} />
     </div>

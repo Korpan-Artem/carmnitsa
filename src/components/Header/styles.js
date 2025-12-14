@@ -7,7 +7,6 @@ export const StyledText = styled.span`
 
 export const StyledBox = styled.div`
   height: 10vh;
-  width: 100vw;
   text-align: center;
   background-color: black;
   display: flex;
