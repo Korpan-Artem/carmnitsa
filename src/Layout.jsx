@@ -6,13 +6,15 @@ import Header                 from "./components/Header";
 import "./index.css";
 
 const result = [
-  <Link to="/products" key="products">
+  <Link to="/catalog" key="catalog">
     Каталог запчастин
   </Link>,
-  "Авто з США",
+  <Link to="/usa-cars" key="usa-cars">
+    Авто з США
+  </Link>,
   "Сервіс",
   "Акції",
-  <Link to="/about" key="about">
+  <Link to="/contact" key="contact">
     Контакти
   </Link>,
 ];
