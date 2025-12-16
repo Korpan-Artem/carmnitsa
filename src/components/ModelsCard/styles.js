@@ -70,7 +70,7 @@ export const StyledButton = styled.button`
   transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
 
   &:hover {
-    background-color: rgba(254, 233, 158, 0.9);
+    background-color: rgba(255, 200, 0, 1);
   }
 `;
 

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Input, Select } from "antd";
 
 export const HeaderWrapper = styled.header`
   width: 100%;
@@ -6,8 +7,6 @@ export const HeaderWrapper = styled.header`
   border-bottom: 1px solid #eee;
   max-width: 1920px;
 `;
-
-/* ---------- TOP BAR ---------- */
 
 export const TopBar = styled.div`
   height: 70px;
@@ -20,14 +19,6 @@ export const TopBar = styled.div`
 export const LogoBlock = styled.div`
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 22px;
-  font-weight: 700;
-  color: #1e1e1e;
-
-  svg {
-    font-size: 22px;
-  }
 `;
 
 export const LogoImage = styled.img`
@@ -37,42 +28,44 @@ export const LogoImage = styled.img`
   display: block;
 `;
 
-/* ---------- SEARCH ---------- */
-
 export const SearchBlock = styled.div`
   flex: 1;
   max-width: 600px;
   margin: 0 40px;
-  padding: 0 12px;
-  height: 42px;
-  border: 1px solid #e5e7eb;
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
+`;
 
-  svg {
-    font-size: 18px;
+export const StyledInput = styled(Input)`
+  height: 42px;
+  border-radius: 6px;
+
+  .ant-input {
+    font-size: 14px;
+  }
+
+  .ant-input-prefix {
+    margin-right: 8px;
+  }
+
+  .ant-input-suffix {
     color: #6b7280;
     cursor: pointer;
   }
 `;
 
-export const CategorySelect = styled.div`
+export const CategorySelect = styled(Select)`
+  min-width: 90px;
   font-size: 14px;
-  color: #374151;
-  cursor: pointer;
-  white-space: nowrap;
-`;
 
-export const SearchInput = styled.input`
-  flex: 1;
-  border: none;
-  outline: none;
-  font-size: 14px;
-`;
+  .ant-select-selector {
+    padding: 0 !important;
+    background: transparent !important;
+  }
 
-/* ---------- ICONS ---------- */
+  .ant-select-selection-item {
+    color: #374151;
+    font-weight: 500;
+  }
+`;
 
 export const IconsBlock = styled.div`
   display: flex;

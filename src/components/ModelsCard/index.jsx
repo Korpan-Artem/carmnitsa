@@ -16,7 +16,7 @@ function ModelsCard({ products = [] }) {
         <StyledCard key={index} className="model-item">
           <ImageWrapper>
             <StyledImage src={item.photoUrl} alt={`${item.brand} ${item.model}`} />
-            <StyledButton>Перейти</StyledButton>
+            <StyledButton>Каталог</StyledButton>
           </ImageWrapper>
           <StyledText>
             {item.brand} {item.model}

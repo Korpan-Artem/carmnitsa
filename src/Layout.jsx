@@ -6,18 +6,15 @@ import Header                 from "./components/Header";
 import "./index.css";
 
 const result = [
-  <Link to="/" key="home">
-    Модельний ряд
-  </Link>,
   <Link to="/products" key="products">
-    Авто у наявності
+    Каталог запчастин
   </Link>,
-  "Покупцям",
+  "Авто з США",
   "Сервіс",
+  "Акції",
   <Link to="/about" key="about">
-    Про компанію
+    Контакти
   </Link>,
-  "Новини",
 ];
 
 export default function Layout() {

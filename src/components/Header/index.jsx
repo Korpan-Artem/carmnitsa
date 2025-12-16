@@ -1,24 +1,22 @@
 import {
-  SearchOutlined,
   HeartOutlined,
   ShoppingCartOutlined,
-} from "@ant-design/icons";
+}                       from "@ant-design/icons";
+import SearchInput      from "../core/SearchInput";
 
-import logo from '../../assets/images/logo.png';
+import logo             from "../../assets/images/logo.png";
 
 import {
   HeaderWrapper,
   TopBar,
   LogoBlock,
-  SearchBlock,
-  CategorySelect,
-  SearchInput,
   IconsBlock,
   IconItem,
   BottomNav,
   NavItem,
-  LogoImage
+  LogoImage,
 } from "./styles";
+
 
 function Header({ items }) {
   const HeaderItems = items.map((item, index) => (
@@ -32,15 +30,7 @@ function Header({ items }) {
           <LogoImage src={logo} alt="AutozPro logo" />
         </LogoBlock>
 
-        <SearchBlock>
-          <CategorySelect>
-            All Categories
-          </CategorySelect>
-
-          <SearchInput placeholder="Search for products, brands, services" />
-
-          <SearchOutlined />
-        </SearchBlock>
+        <SearchInput />
 
         <IconsBlock>
           <IconItem>
