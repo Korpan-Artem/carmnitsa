@@ -43,13 +43,11 @@ export const StyledSelect = styled(Select)`
   }
 `;
 
-
 export const StyledInput = styled(Input)`
   flex: 1;
   border: none;
   font-size: 14px;
   height: 46px;
-  line-height: 46px;
   padding: 0 12px;
 
   .ant-input-suffix {
@@ -57,7 +55,8 @@ export const StyledInput = styled(Input)`
     cursor: pointer;
   }
 
-  &:focus, &:focus-within {
+  &:focus,
+  &:focus-within {
     border-color: inherit;
     box-shadow: 0 0 0 2px rgba(5, 145, 255, 0.1);
     outline: 0;

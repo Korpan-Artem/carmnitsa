@@ -17,10 +17,13 @@
     "my-private-module": "https://github.com/Korpan-Artem/carmnitsa",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "react-helmet-async": "^2.0.5",
     "react-i18next": "^16.5.0",
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.10.1",
+    "react-slick": "^0.31.0",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.19"
   },
   "devDependencies": {
