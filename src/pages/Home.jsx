@@ -2,26 +2,28 @@ import { useEffect, useState } from "react";
 import { getProducts } from "../api/products";
 import Banner from "../components/Banner";
 import ModelsCard from "../components/ModelsCard";
+import compass from '../assets/images/compass.png';
+import renegade from '../assets/images/renegade.png';
+import cherokee from '../assets/images/cherokee.png';
 
 const Models = [
   {
-    brand: "BMW",
-    model: "M5",
+    brand: "Jeep",
+    model: "Compass",
     year: 2017,
-    photoUrl: "https://mixprogram.ru/upload/000/u1/6/c/bmw-photo-normal.jpg",
+    photoUrl: compass
   },
   {
-    brand: "Wolksvagen",
-    model: "B3",
+    brand: "Jeep",
+    model: "Renegade",
     year: 2020,
-    photoUrl: "https://s1.manualzz.com/image-store/data/4764091-256x256",
+    photoUrl: renegade
   },
   {
-    brand: "Tesla",
-    model: "Y",
+    brand: "Jeep",
+    model: "Cherokee",
     year: 2025,
-    photoUrl:
-      "https://files.idyllic.app/files/static/2106675?width=256&optimizer=image",
+    photoUrl: cherokee
   },
 ];
 
@@ -51,9 +53,9 @@ export default function Home() {
   // if (error) return <div>{error}</div>;
 
   return (
-    <div>
+    <>
       <Banner />
       <ModelsCard products={Models} />
-    </div>
+    </>
   );
 }
