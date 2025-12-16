@@ -1,9 +1,9 @@
 {
   "banner": {
     "smallText": "Легко, швидко, надійно",
-    "largeText": "Знайди <strong>ідеальну деталь</strong> для свого автомобіля",
+    "largeText": "Знайди <strong>ідеальну деталь</strong> для свого авто",
     "selectYear": "Виберіть рік",
-    "selectBrand": "Виберіть марку",
+    "selectEquipment": "Виберіть комплектація",
     "selectModel": "Виберіть модель"
   }
 }

@@ -30,11 +30,9 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  flex-direction: column;
+  min-width: 100%;
 }
 
 h1 {
@@ -42,12 +40,17 @@ h1 {
   line-height: 1.1;
 }
 
-/* -------------------------- */
-/*          Layout            */
-/* -------------------------- */
-
 .app-layout {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.slick-track {
+  overflow: visible !important;
+}
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

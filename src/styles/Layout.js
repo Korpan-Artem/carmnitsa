@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   min-height: 100vh;
-
-  font-family: "Inter", "SF Pro Display", system-ui, sans-serif;
+  font-family: "Roboto", "SF Pro Display", system-ui, sans-serif;
   color: var(--text-primary);
   background: var(--bg-primary);
   letter-spacing: 0.015em;
@@ -16,6 +16,6 @@ export const Wrapper = styled.div`
 
 export const Container = styled.div`
   width: 100%;
-  max-width: 1480px;
+  max-width: 1920px;
   margin: 0 auto;
 `;

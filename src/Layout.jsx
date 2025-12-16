@@ -1,23 +1,22 @@
-import { Outlet } from "react-router-dom";
+import { Outlet }             from "react-router-dom";
+import { Link }               from "react-router-dom";
 import { Wrapper, Container } from "./styles/Layout";
-import Header from "./components/Header";
+import Header                 from "./components/Header";
+
 import "./index.css";
-import { Link } from "react-router-dom";
 
 const result = [
-  <Link to="/" key="home">
-    Модельний ряд
+  <Link to="/catalog" key="catalog">
+    Каталог запчастин
   </Link>,
-  <Link to="/products" key="products">
-    Авто у наявності
+  <Link to="/usa-cars" key="usa-cars">
+    Авто з США
   </Link>,
-  "Покупцям",
-  "Фінансові послуги",
   "Сервіс",
-  <Link to="/about" key="about">
-    Про компанію
+  "Акції",
+  <Link to="/contact" key="contact">
+    Контакти
   </Link>,
-  "Новини",
 ];
 
 export default function Layout() {

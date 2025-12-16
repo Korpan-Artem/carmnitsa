@@ -36,6 +36,15 @@ function Banner() {
         <FiltersInner>
           <form aria-label="Фільтр пошуку деталей" style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
             <CustomSelect
+              placeholder={t("banner.selectModel")}
+              prefix={<TagsOutlined />}
+              options={[
+                { value: "x5", label: "X5" },
+                { value: "a6", label: "A6" },
+                { value: "passat", label: "Passat" },
+              ]}
+            />
+            <CustomSelect
               placeholder={t("banner.selectYear")}
               prefix={<CalendarOutlined />}
               options={[
@@ -44,24 +53,13 @@ function Banner() {
                 { value: "2022", label: "2022" },
               ]}
             />
-
             <CustomSelect
-              placeholder={t("banner.selectBrand")}
+              placeholder={t("banner.selectEquipment")}
               prefix={<CarOutlined />}
               options={[
                 { value: "bmw", label: "BMW" },
                 { value: "audi", label: "Audi" },
                 { value: "vw", label: "Volkswagen" },
-              ]}
-            />
-
-            <CustomSelect
-              placeholder={t("banner.selectModel")}
-              prefix={<TagsOutlined />}
-              options={[
-                { value: "x5", label: "X5" },
-                { value: "a6", label: "A6" },
-                { value: "passat", label: "Passat" },
               ]}
             />
           </form>

@@ -2,9 +2,11 @@ import styled from "styled-components";
 import { Select } from "antd";
 
 export const BannerWrapper = styled.section`
+  max-width: 1250px;
   min-height: 40vh;
+  margin: 0 auto;
   background: #ffffff;
-  padding: 40px 120px;
+  padding: 0 120px;
   display: flex;
   align-items: center;
   justify-content: space-between;
